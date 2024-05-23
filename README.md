@@ -1,2 +1,2 @@
 # form-b7game-page
-Exercicio proposto no curso de desenvolvimento fullstack
+Um projeto de formulário básico para estudos de HTML e CSS
