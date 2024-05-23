@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>B7game - Cadastro</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.register').click(function(){
+                $('.form').toggleClass('active')
+            })
+        })
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="register">Clique aqui para criar sua conta</div>
+        <div class="form">
+            <form action="" method="post">
+                <input type="text" name="" placeholder="usuario" required>
+                <input type="email" name="" id="" placeholder="email" required>
+                <input type="number" min="10" max="100" placeholder="idade" required>
+                <input type="password" name="" id="" placeholder="senha" required>
+                <input type="password" name="" id="" placeholder="confirmação de senha" required>
+                <input type="checkbox" name="" id=""> <span>Estou de acordo com os termos estabelecidos.</span>
+                <input type="submit" value="Criar conta">
+                <input type="reset" value="Resetar">
+            </form>
+        </div>
+    </div>
+</body>
+</html>

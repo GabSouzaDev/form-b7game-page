@@ -1,0 +1,99 @@
+* { 
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(bg.jpg);
+    background-size: cover;
+    font-family: sans-serif;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.register {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    background-color: #247ebf;
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 0 5px 10px rgba(0,0,0,.5);
+}
+
+.form {
+    position: relative;
+    width: 100%;
+    background-color: rgba(17,24,34,.8);
+    transform-origin: top;
+    padding: 30px 20px;
+    transition: .5s;
+    transform: perspective(2000px) rotateX(-90deg);
+
+}
+
+.form.active {
+    transform: perspective(2000px) rotateX(0deg);
+}
+
+.form form input[type="text"],
+.form form input[type="password"],
+.form form input[type="email"],
+.form form input[type="number"] {
+    width: 100%;
+    margin-bottom: 20px;
+    height: 40px;
+    padding:10px 20px;
+    border-radius: 10px;
+    box-shadow: none;
+    outline: none;
+    color: #fff;
+    background-color: transparent;
+    border: 1px solid #fff;
+}
+
+::placeholder {
+    color: #fff;
+}
+
+.form form input[type="submit"], 
+.form form input[type="reset"] {
+    display: inline;
+    padding: 12px 40px;
+    margin-top: 20px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: #324e66;
+    color: #fff;
+
+}
+
+.form form input[type="submit"]:hover, 
+.form form input[type="reset"]:hover {
+    background-color: #247ebf;
+}
+
+.form form input[type="checkbox"] {
+    cursor: pointer;
+    margin-top:10px;
+}
+
+.form form span {
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+}
